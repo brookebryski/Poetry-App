@@ -18,5 +18,23 @@ class UsersController < ApplicationController
     def new
 		@poem = Poem.find(params["poem_id"])
 		@user = @poem.users.build
+    end
+
+    def create
+		@poem = Poem.find(params["poem_id"])
+		@user = @poem.users.build
+		if @user.update(user_params)
+			respond_to do |format|
+				format.html {redirect_to poem_path(@poem)}
+				format.json {render json: @user}
+			end
+		else
+			flash.now[:message] = @user.errors[:content][0]
+			render :new
+		end
+    end
+    
+    def edit
+		@user = User.find(params["id"])
 	end
 end
