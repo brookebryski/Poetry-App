@@ -1,0 +1,10 @@
+<div id='poems-index'>
+	<% @poems.each do |poem| %>
+	<h3>
+		<%= link_to poem.title, poem_path(poem) %>
+	</h3>
+	<p>
+		<%= poem.content %>
+	</p>
+	<% end %>
+</div>

@@ -1,0 +1,7 @@
+<strong> Write a comment </strong>
+
+<%= form_for [@poem, @comment] do |f| %>
+	<p><%= f.text_area :content %></p>
+ 
+	<%= f.submit %>
+<% end %>
