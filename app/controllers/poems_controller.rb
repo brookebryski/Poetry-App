@@ -19,5 +19,20 @@ class PoemsController < ApplicationController
 			f.json {render json: @poem }
 		end
 	end
+    
+    def new
+		@poem = Poem.new
+	end
 	
+	def create
+		@poem = Poem.new(poem_params)
+		if @poem.save
+			respond_to do |f|
+				f.html {redirect_to poems_path}
+				f.json {render json: @poems}
+			end
+		else
+			render :new
+		end
+	end
 end
