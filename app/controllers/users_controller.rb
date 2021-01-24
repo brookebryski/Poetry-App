@@ -46,10 +46,15 @@ class UsersController < ApplicationController
 			render :edit 
 		end
     end
-    
+
     def destroy
 		@user = User.find(params["id"])
 		@user.delete
 		redirect_to users_path
-	end
+    end
+    
+	private
+    def user_params
+        params.require(:user).permit(:poem_id, :content)
+    end
 end
