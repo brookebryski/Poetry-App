@@ -10,5 +10,14 @@ class PoemsController < ApplicationController
 			f.html {render :index}
 			f.json {render json: @poems}
 		end
+    end
+    
+    def show
+		@poem = Poem.find(params["id"])
+		respond_to do |f|
+			f.html {render :show}
+			f.json {render json: @poem }
+		end
 	end
+	
 end
