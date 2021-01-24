@@ -51,6 +51,16 @@ class PoemsController < ApplicationController
 		else
 			render :edit 
 		end
+    end
+    
+    def destroy
+		@poem = Poem.find(params["id"])
+		@poem.delete
+		redirect_to poems_path
 	end
 
+	private
+		def post_params
+			params.require(:poem).permit(:title, :content)
+		end
 end
