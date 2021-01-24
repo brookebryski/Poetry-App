@@ -34,5 +34,23 @@ class PoemsController < ApplicationController
 		else
 			render :new
 		end
+    end
+
+    def edit
+		@poem = Poem.find(params["id"])
+		respond_to do |f|
+			f.html {render :edit}
+			f.json {render json: @poem}
+		end
 	end
+	
+	def update
+		@poem = Poem.find(params["id"])
+		if @poem.update(poem_params)
+			redirect_to poem_path(@poem)
+		else
+			render :edit 
+		end
+	end
+
 end
