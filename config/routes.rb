@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get '/test', to: 'application#test'
+  resources :users
+  resources :poems do
+    resources :comments
+	end
+
+	get '/new_comment_form', to: 'poems#new_comment_form'
+
+	get '/comments', to: 'comments#index'
+	root 'poems#index'
 end
