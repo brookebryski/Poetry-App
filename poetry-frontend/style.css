@@ -1,5 +1,5 @@
 * {
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Fraunces', serif;
 }
 
 .card {
@@ -11,19 +11,13 @@ width: 18rem;
 height: 27rem;
 display: inline-grid;
 margin: 1rem 1rem;
-/* box-shadow: 1px 2px #00CED1 */
 }
 
 button {
-/* position: relative; */
-/* background-color: #e04b52; */
 border: none;
-/* border-radius: 5px; */
 height: 3rem;
 width: max-content;
-/* color: whitesmoke; */
 font-size: 22px;
-/* justify-self: right; */
 }
 
 .poem-image {
@@ -33,15 +27,15 @@ width: auto;
 }
 
 .poem-cat {
-  color: #008080;
+  color: #008B8B;
 }
 
 .subheader {
-  color: #008080;
+  color: #008B8B;
 }
 
 header {
-  background: #008080;
+  background: #008B8B;
   padding: 10px;
   display: flex;
   justify-content: space-between;

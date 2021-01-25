@@ -9,6 +9,7 @@ const signupForm = document.querySelector('#signup-form')
 const signupInputs = document.querySelectorAll(".signup-input")
 const header = document.querySelector('.header-banner')
 const logoutButton = document.querySelector('.logout-btn')
+
 let loggedIn = null
 let currentUser
 
