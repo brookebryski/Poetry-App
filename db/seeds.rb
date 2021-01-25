@@ -2,17 +2,17 @@
 # User.create(username: 'bethany', email: 'bethany@email.com')
 # User.create(username: 'ashley', email: 'ashley@email.com')
 
-# Poem.create(user_id: 1, title: "Baby", content: "Baby, baby, baby / Oh / Baby, baby, baby / No / Baby, baby, baby / Oh / Thought You'd always be mine")
-# Poem.create(user_id: 1, title: "On The Sea", content: "On the Sea / All is Forgiven")
-# Poem.create(user_id: 1, title: "Space Song", content: "It was late at night / You held on tight / To a narraow / Ray of light")
+# Poem.create(user_id: 1, title: "Baby", body: "Baby, baby, baby / Oh / Baby, baby, baby / No / Baby, baby, baby / Oh / Thought You'd always be mine")
+# Poem.create(user_id: 1, title: "On The Sea", body: "On the Sea / All is Forgiven")
+# Poem.create(user_id: 1, title: "Space Song", body: "It was late at night / You held on tight / To a narraow / Ray of light")
 
-# Poem.create(user_id: 2, title: "LA", content: "City of Angels / What have you up your sleeve? / City of Angeles / What am I supposed to believe?")
-# Poem.create(user_id: 2, title: "Astronaut", content: "Fall / Back / In / To / Place")
-# Poem.create(user_id: 2, title: "Lemon", content: "Even with the lights down low / Lemon colored heartbeat glow")
+# Poem.create(user_id: 2, title: "LA", body: "City of Angels / What have you up your sleeve? / City of Angeles / What am I supposed to believe?")
+# Poem.create(user_id: 2, title: "Astronaut", body: "Fall / Back / In / To / Place")
+# Poem.create(user_id: 2, title: "Lemon", body: "Even with the lights down low / Lemon colored heartbeat glow")
 
-# Poem.create(user_id: 3, title: "Saturn", content: "I was coming closer / To a new world order")
-# Poem.create(user_id: 3, title: "Party", content: "Tiny little ray of light / Where will you lead me to tonight?")
-# Poem.create(user_id: 3, title: "Good Time", content: "I had a good time / Making something out of nothing / If only for a short time")
+# Poem.create(user_id: 3, title: "Saturn", body: "I was coming closer / To a new world order")
+# Poem.create(user_id: 3, title: "Party", body: "Tiny little ray of light / Where will you lead me to tonight?")
+# Poem.create(user_id: 3, title: "Good Time", body: "I had a good time / Making something out of nothing / If only for a short time")
 
 
 # Comment.create(user_id: 1, poem_id: 1, content: 'I loved this poem!')
