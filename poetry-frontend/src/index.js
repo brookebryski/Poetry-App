@@ -8,7 +8,8 @@ const likeButton = document.querySelector('.like-btn')
 const signupForm = document.querySelector('#signup-form')
 const signupInputs = document.querySelectorAll(".signup-input")
 const header = document.querySelector('.header-banner')
-const logout = document.querySelector('.logout')
+const logoutButton = document.querySelector('.logout-btn')
+let loggedIn = null
 let currentUser
 
 class Poem {
@@ -87,6 +88,11 @@ signupForm.addEventListener('submit', function(e){
         }
     }
     )
+})
+
+logoutButton.addEventListener('click', function(e) {
+    localStorage.clear(loggedIn)
+    window.location.reload()
 })
 
 poemCollection.addEventListener('click', function(e) {
