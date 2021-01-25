@@ -16,7 +16,6 @@ poems =
     {title: "The Raven", author: "Edgar Allen Poe", link: "https://www.poetryfoundation.org/poems/48860/the-raven-5964f5014d47a", image: "https://media.poetryfoundation.org/uploads/media/default/0001/21/bd5c888c4689e6cd3583bbe7575a1a2cad3487f6.jpeg?w=260&h=&fit=max&260"},
     {title: "Mock Orange", author: "Louise Glück", link: "https://www.poetryfoundation.org/poems/49601/mock-orange", image: "https://media.poetryfoundation.org/uploads/media/default/0001/23/bf43351ac832537dbe27c5b2f350da1c82a51979.jpeg?w=260&h=&fit=max&260"},
     {title: "We Wear the Mask", author: "Paul Laurence Dunbar", link: "https://www.poetryfoundation.org/poems/44203/we-wear-the-mask", image: "https://media.poetryfoundation.org/uploads/media/default/0001/17/020a4db70aa0cc5c341b6dae9c0a7726ea2ecbc1.jpeg?w=260&h=&fit=max&260"},
-
     {title: "[i carry your heart with me(i carry it in]", author: "E. E. Cummings", link: "https://www.poetryfoundation.org/poetrymagazine/poems/49493/i-carry-your-heart-with-mei-carry-it-in", image: "https://media.poetryfoundation.org/uploads/media/default/0001/22/a312e5d82ee6f673a75a6d33ba12be65f29d1749.jpeg?w=260&h=&fit=max&260"},
     {title: "The Tyger", author: "William Blake", link: "https://www.poetryfoundation.org/poems/43687/the-tyger", image: "https://media.poetryfoundation.org/uploads/media/default/0001/16/f563065256a6d8e47d7d218edf4bcc88d1bd0485.jpeg?w=260&h=&fit=max&260"},
     {title: "To a Mouse", author: "Robert Burns", link: "https://www.poetryfoundation.org/poems/43816/to-a-mouse-56d222ab36e33", image: "https://media.poetryfoundation.org/uploads/media/default/0001/22/97f836b9bda3b615ccca10274aabb4fc060a0e50.jpeg?w=260&h=&fit=max&260"},
@@ -28,7 +27,7 @@ poems =
     {title: "Jabberwocky", author: "Lewis Carroll", link: "https://www.poetryfoundation.org/poems/42916/jabberwocky", image: "https://media.poetryfoundation.org/uploads/media/default/0001/02/8c288c4aafce75723477141cbd54066b871de7b2.jpeg?w=260&h=&fit=max&260"},
     {title: "The Raven", author: "Edgar Allen Poe", link: "https://www.poetryfoundation.org/poems/48860/the-raven-5964f5014d47a", image: "https://media.poetryfoundation.org/uploads/media/default/0001/21/bd5c888c4689e6cd3583bbe7575a1a2cad3487f6.jpeg?w=260&h=&fit=max&260"},
     {title: "The Second Coming", author: "William Butler Yeats", link: "https://www.poetryfoundation.org/poems/43290/the-second-coming", image: "https://media.poetryfoundation.org/uploads/media/default/0001/17/2ade64e2ec274d1c56ceeb02f53e584f50bc663b.jpeg?w=260&h=&fit=max&260"},
-    
+    {title: "The Road Not Taken", author: "Robert Frost", link: "https://www.poetryfoundation.org/poems/44272/the-road-not-taken", image: "https://media.poetryfoundation.org/uploads/media/default/0001/22/a1c803fc181974702f2f0fb13b3879aa29ab6f25.jpeg?w=260&h=&fit=max&260"},
 ]
 
 poems.each do |poem|
