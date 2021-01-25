@@ -1,9 +1,7 @@
 class CreatePoems < ActiveRecord::Migration[6.0]
   def change
     create_table :poems do |t|
-      t.string :title
-			t.string :content
-			t.integer :user_id
+			t.string :body
       t.timestamps
     end
   end
