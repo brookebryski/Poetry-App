@@ -3,7 +3,6 @@ class CreatePoems < ActiveRecord::Migration[6.0]
     create_table :poems do |t|
       t.string :title
       t.string :body
-      t.integer :user_id
       t.timestamps
     end
   end
