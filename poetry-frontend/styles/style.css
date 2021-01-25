@@ -1,40 +1,78 @@
-body {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
-      sans-serif;
-    font-weight: 300;
-    line-height: 1.6em;
-    font-size: 1.3em;
-  }
-  
-  a {
-    color: #097659;
-  }
-  
-  input {
-    font-size: 1.5em;
-  }
-  
-  .container {
-    width: 960px;
-    margin: auto;
-    margin-top: 50px;
-  }
-  
-  ul {
-    padding-left: 20px;
-  }
-  
-  .delete-note-link {
-    color: red;
-  }
-  
-  .editable {
-    border: 1px solid black;
-    padding: 20px;
-  }
-  
-  #notes-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 10px;
-  }
+* {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+.card {
+text-align: left;
+border: #778899 solid 0.5px;
+border-radius: 25px;
+padding: 1rem;
+width: 18rem;
+height: 27rem;
+display: inline-grid;
+margin: 1rem 1rem;
+/* box-shadow: 1px 2px #00CED1 */
+}
+
+button {
+/* position: relative; */
+/* background-color: #e04b52; */
+border: none;
+/* border-radius: 5px; */
+height: 3rem;
+width: max-content;
+/* color: whitesmoke; */
+font-size: 22px;
+/* justify-self: right; */
+}
+
+.poem-image {
+justify-self: center;
+height: 12rem;
+width: auto;
+}
+
+.poem-cat {
+  color: #008080;
+}
+
+.subheader {
+  color: #008080;
+}
+
+header {
+  background: #008080;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+}
+
+header span {
+  color: white;
+  font-size: 20px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.card > * {
+  margin: 0;
+}
+
+#signup-form  input {
+  padding: 5px;
+  margin: 5px;
+  font-size: 15px;
+}
+
+.under-header {
+  padding: 7px;
+  margin: 7px;
+}
