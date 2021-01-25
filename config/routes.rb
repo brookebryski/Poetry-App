@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  resources :poems
+  resources :users
+  resources :poems do
+    resources :comments
+  end
+  
 end
