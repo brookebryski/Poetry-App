@@ -22,7 +22,7 @@ class Poem {
 
     render() {
         return `<div class="card">
-                  <h2>${this.title} ($${this.author})</h2>
+                  <h2>${this.title} (${this.author})</h2>
                   <a href=${this.link} target="_blank"><img src=${this.image} class="poem-image" /></a>
                   <button data-poem-id=${this.id} class="like-btn">♡</button>
                 </div>`
@@ -43,7 +43,7 @@ function putFavoritesOnDom(favArray){
                                <h4 class="back-link">←Back to Poems</h4>`
     favArray.forEach(favorite => {
         favCollection.innerHTML += `<div class="card">
-          <h2>${favorite.poem.title} ($${favorite.poem.author})</h2>
+          <h2>${favorite.poem.title} (${favorite.poem.author})</h2>
           <a href=${favorite.poem.link} target="_blank"><img src=${favorite.poem.image} class="poem-image" /></a>
           <button data-gift-id=${favorite.poem.id} class="like-btn" style="color:red;">♡</button>
         </div>`
