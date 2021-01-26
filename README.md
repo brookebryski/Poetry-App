@@ -1,4 +1,4 @@
-# Poetry-App
+# Poetry App
 
 # DESCRIPTION
 
