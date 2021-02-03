@@ -120,7 +120,7 @@ function loggedInUser(object){
 }
 
 poemCollection.addEventListener('click', function(e){
-    if ((e.target.className == "like-btn") && (event.target.style.color !== 'red')) {
+    if ((e.target.className == "like-btn") && (e.target.style.color !== 'red')) {
         let target = e.target
             fetch(FAVORITES_URL, {
                 method: "POST",
@@ -135,7 +135,7 @@ poemCollection.addEventListener('click', function(e){
         })
         .then( res => res.json())
         .then( res => target.dataset.favId = res.id);
-        event.target.style.color = 'red';}
+        e.target.style.color = 'red';}
     else if ((e.target.className == "like-btn") && (e.target.style.color == 'red')) {
         e.target.style.color = 'black';
         fetch(FAVORITES_URL + '/' + e.target.dataset.favId, {
