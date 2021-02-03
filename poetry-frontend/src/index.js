@@ -97,7 +97,7 @@ logoutButton.addEventListener('click', function(e) {
 })
 
 poemCollection.addEventListener('click', function(e) {
-    if (event.target.className == "favorites-link") {
+    if (e.target.className == "favorites-link") {
         poemCollection.style.display = 'none';
         fetchFavorites();
         favCollection.style.display = 'initial';
@@ -105,7 +105,7 @@ poemCollection.addEventListener('click', function(e) {
 })
 
 favCollection.addEventListener('click', function(e) {
-    if (event.target.className == "back-link") {
+    if (e.target.className == "back-link") {
         favCollection.style.display = 'none';
         poemCollection.style.display = 'initial';
     }
@@ -120,8 +120,8 @@ function loggedInUser(object){
 }
 
 poemCollection.addEventListener('click', function(e){
-    if ((event.target.className == "like-btn") && (event.target.style.color !== 'red')) {
-        let target = event.target
+    if ((e.target.className == "like-btn") && (event.target.style.color !== 'red')) {
+        let target = e.target
             fetch(FAVORITES_URL, {
                 method: "POST",
                 headers: {
@@ -130,15 +130,15 @@ poemCollection.addEventListener('click', function(e){
                 },
                 body: JSON.stringify({
                         user_id: `${currentUser.id}`,
-                        poem_id: `${event.target.dataset.poemId}`
+                        poem_id: `${e.target.dataset.poemId}`
                 })
         })
         .then( res => res.json())
         .then( res => target.dataset.favId = res.id);
         event.target.style.color = 'red';}
-    else if ((event.target.className == "like-btn") && (event.target.style.color == 'red')) {
-        event.target.style.color = 'black';
-        fetch(FAVORITES_URL + '/' + event.target.dataset.favId, {
+    else if ((e.target.className == "like-btn") && (e.target.style.color == 'red')) {
+        e.target.style.color = 'black';
+        fetch(FAVORITES_URL + '/' + e.target.dataset.favId, {
             method: "DELETE"
         })
     }
