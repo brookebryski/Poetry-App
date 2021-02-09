@@ -31,14 +31,24 @@ class Poem {
     }
 }
 
+
 function putPoemsOnDom(poemArray){
+    poemArray.sort(function(a, b){
+        if(a.title < b.title) { return -1; }
+        if(a.title > b.title) { return 1; }
+        return 0;
+    })
+    
     poemCollection.innerHTML = `<h2 class="subheader">All Poems</h2>
                                 <h4 class="favorites-link">View My Favorites ♡</h4>`
+                            
     poemArray.forEach(poem => {
         poemCollection.innerHTML += new Poem(poem).render()
-
     })
+    
 }
+
+
 
 function putFavoritesOnDom(favArray){
     favCollection.innerHTML = `<h2 class="subheader">My Favorites</h2>
@@ -51,6 +61,8 @@ function putFavoritesOnDom(favArray){
         </div>`
     })
 }
+
+
 
 function fetchPoems(){
     fetch(POEMS_URL)
@@ -143,3 +155,24 @@ poemCollection.addEventListener('click', function(e){
         })
     }
 })
+
+/*poems.sort(function(a,b){
+    var titleA = a.title.toUpperCase();
+    var titleB = b.title.toUpperCase();
+    if (titleA < titleB) {
+        return -1;
+    }
+    if (titleA > titleB) {
+        return 1;
+    }
+    return 0;
+})
+*/
+
+/*
+poems.sort(function(a, b){
+    if(a.title < b.title) { return -1; }
+    if(a.title > b.title) { return 1; }
+    return 0;
+})
+*/
